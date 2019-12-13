@@ -1,14 +1,7 @@
 __author__ = 'Cristobal Ardon'
 
 import  time
-print("Bienvenido al simulador de maquinas de turing");
-print("Este simulador tiene diferentes opciones");
-print("1.Detector de palindromos")
-print("2.Copia de patrones")
-print("3.Multiplicacion Unario")
-print("4.Suma unaria")
-print("5.Resta unaria")
-op=input("Ingrese el numero de la opcion que desea ");
+
 
 
 
@@ -1558,25 +1551,36 @@ def resta(no1,no2):
             print(cabeza)
             posicion = posicion + 1
 
-
-if op == '1':
-    cadena = input("ingrese la cadena que desea verificar");
-    palindromos(cadena);
-if op == '2':
-    cadena = input("ingrese la cadena que desea copiar");
-    copia(cadena);
-if op == '3':
-    no1 = input("ingrese el primer numero");
-    no2 = input("ingrese el primer numero");
-    multi(no1,no2);
-if op == '4':
-    no1 = input("ingrese el primer numero");
-    no2 = input("ingrese el primer numero");
-    suma(no1,no2);
-if op == '5':
-    no1 = input("ingrese el primer numero");
-    no2 = input("ingrese el primer numero");
-    resta(no1,no2);
-
+ifmenu = True
+while ifmenu == True:
+    print("Bienvenido al simulador de maquinas de turing")
+    print("Este simulador tiene diferentes opciones")
+    print("1.Detector de palindromos")
+    print("2.Copia de patrones")
+    print("3.Multiplicacion Unario")
+    print("4.Suma unaria")
+    print("5.Resta unaria")
+    print("6.Salir")
+    op = input("Ingrese el numero de la opcion que desea ")
+    if op == '1':
+        cadena = input("ingrese la cadena que desea verificar");
+        palindromos(cadena);
+    if op == '2':
+        cadena = input("ingrese la cadena que desea copiar");
+        copia(cadena);
+    if op == '3':
+        no1 = input("ingrese el primer numero");
+        no2 = input("ingrese el primer numero");
+        multi(no1,no2);
+    if op == '4':
+        no1 = input("ingrese el primer numero");
+        no2 = input("ingrese el primer numero");
+        suma(no1,no2);
+    if op == '5':
+        no1 = input("ingrese el primer numero");
+        no2 = input("ingrese el primer numero");
+        resta(no1,no2);
+    if op == '6' :
+        ifmenu = False
 
 
