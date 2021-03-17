@@ -1,4 +1,4 @@
-__author__ = 'Cristobal Ardon'
+__author__ = 'Crypt0Cr1s'
 
 import  time
 
